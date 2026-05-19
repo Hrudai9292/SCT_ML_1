@@ -3,35 +3,40 @@
 ## SkillCraft Technology Internship – Task 01
 
 ### Objective
-Develop a Linear Regression model to predict house prices using house features.
+Build a Linear Regression model to predict house sale prices using important housing features.
 
 ---
 
 ## Dataset Used
-Housing Prices Dataset (Housing.csv)
+House Prices – Advanced Regression Techniques (Kaggle)
 
-Features used:
+Files used:
+- train.csv
+- test.csv
 
-- Area
-- Bedrooms
-- Bathrooms
-- Stories
-- Main Road
-- Guest Room
-- Basement
-- Air Conditioning
-- Parking
-- Preferred Area
-- Furnishing Status
+Target variable:
+- SalePrice
 
-Target:
+Dataset contains 1460 training records and multiple housing features.
 
-- House Price
+---
+
+## Features Selected
+The following features were used for prediction:
+
+- OverallQual
+- GrLivArea
+- GarageCars
+- GarageArea
+- TotalBsmtSF
+- FullBath
+- YearBuilt
+
+These features strongly influence house prices.
 
 ---
 
 ## Technologies Used
-
 - Python
 - Pandas
 - NumPy
@@ -42,45 +47,42 @@ Target:
 ---
 
 ## Workflow
-
-1. Data Collection
-2. Data Preprocessing
-3. Exploratory Data Analysis
+1. Data Loading
+2. Data Cleaning
+3. Missing Value Handling
 4. Feature Selection
 5. Train-Test Split
-6. Feature Scaling
-7. Linear Regression Model
-8. Prediction
-9. Evaluation
+6. Linear Regression Model Training
+7. Prediction
+8. Performance Evaluation
 
 ---
 
-## Results
+## Model Performance
 
-Initial R² Score:
+R² Score:
 
-0.456
+0.795
 
-Improved R² Score:
-
-0.649
-
-Model performance improved after adding more features and scaling.
+The model explains approximately 79.5% of house price variation.
 
 ---
 
 ## Output
 
-Predicted House Price:
-
-7341680
-
-Graph:
-
-Actual vs Predicted House Prices
+Generated:
+- Actual vs Predicted Price graph
+- House price prediction model
+- Predicted values for new houses
 
 ---
 
 ## Conclusion
 
-The Linear Regression model successfully predicts house prices with improved accuracy.
+The Linear Regression model successfully predicts house sale prices with good accuracy using selected housing features.
+
+The project demonstrates:
+- Data preprocessing
+- Feature engineering
+- Regression modeling
+- Model evaluation
